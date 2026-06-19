@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hackers Pai d'Égua</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #000;
+            /* Caminho relativo para a imagem de fundo completa */
+            background-image: url('assets/background.png');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            font-family: 'Arial', sans-serif;
+            color: #fff;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+            max-width: 400px;
+            padding: 4rem 1rem 2rem 1rem;
+            z-index: 1;
+        }
+
+        .logo {
+            width: 140px;
+            height: auto;
+            margin-bottom: 1.5rem;
+        }
+
+        .title {
+            font-size: 1.6rem;
+            font-weight: 900;
+            text-align: center;
+            letter-spacing: 1px;
+            line-height: 1.1;
+            margin-bottom: 0.5rem;
+        }
+
+        .instagram-link {
+            color: #aaa;
+            text-decoration: none;
+            font-size: 0.8rem;
+            font-weight: bold;
+            letter-spacing: 1.5px;
+            border-bottom: 1px solid #aaa;
+            padding-bottom: 2px;
+            margin-bottom: 4rem;
+            transition: color 0.3s, border-color 0.3s;
+        }
+
+        .instagram-link:hover {
+            color: #fff;
+            border-color: #fff;
+        }
+
+        .btn {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            /* Gradiente replicando o tom magenta/rosa fornecido */
+            background: linear-gradient(90deg, #d87cb3, #e8a3cc, #d87cb3);
+            color: #000;
+            text-decoration: none;
+            font-weight: 900;
+            font-size: 0.85rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            padding: 1.2rem;
+            border-radius: 30px;
+            margin-bottom: 1.2rem;
+            box-shadow: 0 4px 15px rgba(216, 124, 179, 0.3);
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+            text-align: center;
+            line-height: 1.4;
+        }
+
+        .btn span {
+            display: block;
+        }
+
+        .btn span:first-child {
+            /* Replicação do sublinhado parcial na primeira linha de texto do botão */
+            text-decoration: underline;
+            text-underline-offset: 3px;
+            text-decoration-thickness: 2px;
+            margin-bottom: 2px;
+        }
+
+        .btn:hover {
+            transform: scale(1.03);
+            box-shadow: 0 6px 20px rgba(216, 124, 179, 0.6);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="assets/logo.png" alt="Logo Hackers Pai d'Égua" class="logo">
+
+        <h1 class="title">HACKERS<br>PAI D'ÉGUA</h1>
+
+        <a href="https://instagram.com/hackerpaidegua" class="instagram-link" target="_blank" rel="noopener noreferrer">@HACKERPAIDEGUA</a>
+
+        <a href="https://drive.google.com/file/d/1AskVfHEDdtwJeDzvUNEFqz0NDKvDSqK7/view?usp=sharing" class="btn" target="_blank" rel="noopener noreferrer">
+            <span>EDITAL P/</span>
+            <span>VOLUNTÁRIOS</span>
+        </a>
+
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLScgyIX5fDRSWnfJl7fiQJYfCGBHUIVvimZaTPxNGH290rNciw/viewform" class="btn" target="_blank" rel="noopener noreferrer">
+            <span>FORMULÁRIO P/</span>
+            <span>VOLUNTÁRIOS</span>
+        </a>
+    </div>
+</body>
+</html>
