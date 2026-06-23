@@ -91,12 +91,34 @@
             line-height: 1.4;
         }
 
+        .btn {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            /* Gradiente ajustado para replicar a imagem de referência */
+            background: linear-gradient(90deg, #c965a4 0%, #fbe6ef 50%, #c965a4 100%);
+            color: #000;
+            text-decoration: none;
+            font-weight: 900;
+            font-size: 0.85rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            padding: 1.2rem;
+            border-radius: 18px;
+            margin-bottom: 1.2rem;
+            box-shadow: 0 4px 15px rgba(201, 101, 164, 0.3);
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+            text-align: center;
+            line-height: 1.4;
+        }
+
         .btn span {
             display: block;
         }
 
         .btn span:first-child {
-            /* Replicação do sublinhado parcial na primeira linha de texto do botão */
             text-decoration: underline;
             text-underline-offset: 3px;
             text-decoration-thickness: 2px;
@@ -105,7 +127,7 @@
 
         .btn:hover {
             transform: scale(1.03);
-            box-shadow: 0 6px 20px rgba(216, 124, 179, 0.6);
+            box-shadow: 0 6px 20px rgba(201, 101, 164, 0.6);
         }
     </style>
 </head>
